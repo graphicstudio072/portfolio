@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-monorepo",
+  "version": "1.0.0",
+  "description": "Graphic Designer & Video Editor Portfolio with admin panel, contact form, upload panel, and MongoDB backend.",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client --legacy-peer-deps",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
