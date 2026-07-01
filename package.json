@@ -4,6 +4,8 @@
   "description": "Graphic Designer & Video Editor Portfolio with admin panel, contact form, upload panel, and MongoDB backend.",
   "scripts": {
     "install:all": "npm install && npm install --prefix server && npm install --prefix client --legacy-peer-deps",
+    "build": "npm install --prefix client --legacy-peer-deps && npm run build --prefix client && npm install --prefix server",
+    "start": "npm start --prefix server",
     "server": "npm start --prefix server",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
